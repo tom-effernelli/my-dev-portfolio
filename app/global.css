@@ -87,6 +87,12 @@ img {
   color: #1a1a1a;
 }
 
+.model-page ::selection,
+.model-page ::-moz-selection {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
 .footer-dev-arts ::selection,
 .footer-dev-arts ::-moz-selection,
 .footer-home-about-contact ::selection,

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const DropdownMenuContactSelected = ({ className = "", onClose }) => {
   return (
     <div
-      className={`w-full bg-[#fff3d9] border-[#000] border-solid border-b-[2px] box-border max-w-full h-[380px] xs:h-[300px] flex flex-col items-start pt-5 xs:pt-4 pl-[45px] xs:pl-[23px] pr-[45px] xs:pr-[23px] pb-10 xs:pb-8 gap-2.5 xs:gap-2 text-left lg:text-[29px] md:text-[26px] sm:text-[22px] xs:text-[20px] text-[#000] ${className}`}
+      className={`w-full bg-[#fff3d9] border-[#000] border-solid border-b-[2px] box-border max-w-full h-[440px] xs:h-[350px] flex flex-col items-start pt-5 xs:pt-4 pl-[45px] xs:pl-[23px] pr-[45px] xs:pr-[23px] pb-10 xs:pb-8 gap-2.5 xs:gap-2 text-left lg:text-[29px] md:text-[26px] sm:text-[22px] xs:text-[20px] text-[#000] ${className}`}
     >
       {/* Icône de fermeture en haut à droite */}
       <div className="self-stretch flex-1 overflow-hidden flex items-center justify-end pt-0 px-0 pb-0">
@@ -53,6 +53,15 @@ const DropdownMenuContactSelected = ({ className = "", onClose }) => {
       >
         <b className="self-stretch flex-1 relative leading-[121.1%] flex items-end cursor-pointer">
           ARTS
+        </b>
+      </Link>
+      <Link
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        id="pageButton"
+        href="/model"
+      >
+        <b className="self-stretch flex-1 relative leading-[121.1%] flex items-end cursor-pointer">
+          MODEL
         </b>
       </Link>
       <Link

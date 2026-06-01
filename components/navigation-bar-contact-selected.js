@@ -62,6 +62,15 @@ const NavigationBarContactSelected = ({ className = "" }) => {
         </div>
         <div className="flex items-center justify-center md:hidden xs:hidden sm:hidden">
           <Link
+            className="cursor-pointer [text-decoration:none] relative leading-[121.1%] font-medium text-[inherit]"
+            id="pageButton"
+            href="/model"
+          >
+            MODEL
+          </Link>
+        </div>
+        <div className="flex items-center justify-center md:hidden xs:hidden sm:hidden">
+          <Link
             className="cursor-pointer relative leading-[121.1%] font-medium text-[inherit] md:block underline"
             id="pageButton"
             href="/contact"

@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: `Tom Effernelli - Developer & Graphic Designer`,
   description: `My personal portfolio showcasing my development and graphic design work.`,
-  keywords: ['Tom Effernelli', 'Developer', 'Portfolio', 'Graphic Designer', 'React', 'Next.js'],
+  keywords: ['Tom Effernelli', 'Developer', 'Portfolio', 'Graphic Designer', 'Model', 'Modeling', 'React', 'Next.js'],
   authors: [{ name: 'Tom Effernelli' }],
   creator: 'Tom Effernelli',
   openGraph: {

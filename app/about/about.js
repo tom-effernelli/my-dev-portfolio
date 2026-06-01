@@ -78,6 +78,13 @@ const About = () => {
               </p>
               <p className="m-0">
                 <span className="leading-5">&nbsp;</span>
+                <span className="leading-[180%]">
+                  Beyond code and design, I also model — I believe having a creative
+                  eye in multiple fields strengthens everything I do.
+                </span>
+              </p>
+              <p className="m-0">
+                <span className="leading-5">&nbsp;</span>
               </p>
               <p className="m-0">
                 <span className="leading-[180%]">{`I am open to new opportunities, let's start something awesome - `}</span>

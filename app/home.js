@@ -1,7 +1,6 @@
 import Image from "next/image";
 import FooterHomeAboutContact from "../components/footer-home-about-contact";
 import StickyNavigation from "../components/sticky-navigation";
-import ProjectCard from "../components/project-card";
 import PageHeader from "../components/page-header";
 
 const Home = () => {
@@ -37,7 +36,7 @@ const Home = () => {
             <div className="relative tracking-[-0.01em] leading-[103%] font-space-grotesk font-medium lg:text-[140px] lg:w-auto lg:[align-self:unset] md:text-[110px] sm:text-[75px] xs:text-[52px]">
               <p className="m-0">DEVELOPER,</p>
               <p className="m-0">DESIGNER,</p>
-              <p className="m-0">CS STUDENT.</p>
+              <p className="m-0">MODEL.</p>
             </div>
             <div className="self-stretch flex items-center justify-center text-5xl lg:pt-5 lg:box-border">
               <div className="flex-1 relative font-light md:text-[30px] lg:text-3xl lg:leading-[45px] lg:self-stretch lg:h-auto md:leading-[48px] sm:leading-[30px] sm:text-[25px] xs:text-[16px]">
@@ -59,24 +58,12 @@ const Home = () => {
             src="/Arch-wrapped@2x.png"
           />
         </div>
-        <div className="self-stretch flex flex-col items-end py-0 pl-0 pr-[74px] xs:pr-[37px] lg:gap-[58px] md:gap-[80px] sm:gap-[40px] xs:gap-[20px] z-[1] text-[100px] text-[#fff] md:box-border">
-          <div className="self-stretch relative text-[110px] leading-[121%] font-medium text-[#000] text-right lg:text-[90px] md:text-[70px] sm:text-[50px] xs:text-[35px] font-space-grotesk">
-            TOP PROJECTS:
+        <div className="self-stretch flex flex-col items-start py-0 pl-0 pr-[74px] xs:pr-[37px] z-[1] text-[#000] md:box-border">
+          <div className="self-stretch relative text-[35px] leading-[160%] font-light lg:text-[30px] md:text-[25px] sm:text-[20px] xs:text-[16px]">
+            <p className="m-0">This is a single space for three different worlds.</p>
+            <p className="m-0">Code, design, and modeling — each with its own section,</p>
+            <p className="m-0">each part of the same story.</p>
           </div>
-          <ProjectCard
-            title="SMALL-LLM"
-            subtitle="TRANSFORMER FROM SCRATCH"
-            description="An educational LLM project where I reimplemented the Transformer architecture from scratch, including multi-head self-attention and a full training pipeline."
-            devLink="/project-page-dev-small-llm"
-            backgroundImage="https://res.cloudinary.com/dixdfunwk/image/upload/v1766753782/cover_ike8jj.jpg"
-          />
-          <ProjectCard
-            title="TEXTURE GENERATOR"
-            subtitle="STOCHASTIC PROCEDURAL TEXTURE SYNTHESIS"
-            description="A texture generator that can tile a texture sample across arbitrarily large 3D surfaces without visible repetition patterns."
-            devLink="/project-page-dev-stochastic-texture"
-            backgroundImage="https://res.cloudinary.com/dixdfunwk/image/upload/v1766752758/cover_xeo56w.png"
-          />
         </div>
         <Image
           className="lg:w-[357px] md:w-[357px] sm:w-[250px] xs:w-[300px] absolute !!m-[0 important] lg:bottom-[470px] md:bottom-[270px] sm:bottom-[165px] xs:top-[275px] left-[-50px] max-h-full object-cover z-[0]"

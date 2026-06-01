@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Timestamp from "./timestamp";
 
-const PageHeader = ({ 
-  currentPage = "home", 
+const PageHeader = ({
+  currentPage = "home",
   borderColor = "#000",
   isProjectPage = false
 }) => {
@@ -15,6 +15,7 @@ const PageHeader = ({
     { name: "ABOUT", href: "/about", key: "about" },
     { name: "DEV", href: "/dev", key: "dev" },
     { name: "ARTS", href: "/arts", key: "arts" },
+    { name: "MODEL", href: "/model", key: "model" },
     { name: "CONTACT", href: "/contact", key: "contact" },
   ];
 
@@ -31,6 +32,9 @@ const PageHeader = ({
         return true;
       }
       if (pageKey === "arts" && (currentPage === "arts" || currentPage?.includes("arts"))) {
+        return true;
+      }
+      if (pageKey === "model" && (currentPage === "model" || currentPage?.includes("model"))) {
         return true;
       }
     }
@@ -141,7 +145,7 @@ const PageHeader = ({
 
     if (index === 2) {
       const showSymbolOnLink = shouldShowSymbolOnLink(page.key);
-      
+
       if (isProjectPage && showSymbolOnLink && !isSelected) {
         return (
           <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end">
@@ -163,7 +167,7 @@ const PageHeader = ({
           </div>
         );
       }
-      
+
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end">
           {isSelected ? (
@@ -186,7 +190,7 @@ const PageHeader = ({
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          {(currentPage === "home" || currentPage === "about" || currentPage === "contact" || currentPage === "dev" || currentPage === "arts") && (
+          {(currentPage === "home" || currentPage === "about" || currentPage === "contact" || currentPage === "dev" || currentPage === "arts" || currentPage === "model") && (
             <div className={`self-stretch flex-1 ${borderClass} border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden`}>
               <Timestamp className={`relative leading-[121.1%] font-light lg:text-[22px] ${textColorClass}`} />
             </div>
@@ -197,7 +201,7 @@ const PageHeader = ({
 
     if (index === 3) {
       const showSymbolOnLink = shouldShowSymbolOnLink(page.key);
-      
+
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           {isSelected ? (
@@ -228,6 +232,38 @@ const PageHeader = ({
     }
 
     if (index === 4) {
+      const showSymbolOnLink = shouldShowSymbolOnLink(page.key);
+
+      return (
+        <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
+          {isSelected ? (
+            <div className={`self-stretch flex-1 ${borderClass} border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px]`}>
+              <b className={`self-stretch relative leading-[121.1%] cursor-auto lg:text-[26px] sm:text-[22px] xs:text-[22px] ${textColorClass}`}>
+                <span className="text-[16px] lg:text-[14px] sm:text-[12px] xs:text-[12px] inline-block -translate-y-1">■</span> {page.name}
+              </b>
+            </div>
+          ) : (
+            <Link
+              className={`cursor-pointer [text-decoration:none] self-stretch flex-1 ${borderClass} border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit]`}
+              id="pageButton"
+              href={page.href}
+            >
+              <b className={`self-stretch relative leading-[121.1%] cursor-pointer lg:text-[26px] sm:text-[22px] xs:text-[22px] ${textColorClass}`}>
+                {showSymbolOnLink && (
+                  <span className="text-[16px] lg:text-[14px] sm:text-[12px] xs:text-[12px] inline-block -translate-y-1">■</span>
+                )} {page.name}
+              </b>
+            </Link>
+          )}
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
+        </div>
+      );
+    }
+
+    if (index === 5) {
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           {isSelected ? (
@@ -259,10 +295,16 @@ const PageHeader = ({
   };
 
   const getHeaderContainerClasses = () => {
-    if (currentPage === "arts" && isProjectPage) {
-      return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
+    if ((currentPage === "arts" || currentPage?.includes("arts")) && isProjectPage) {
+      return "self-stretch h-[442px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
+    }
+    if ((currentPage === "model" || currentPage?.includes("model")) && isProjectPage) {
+      return "self-stretch h-[442px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
     }
     if (currentPage === "arts" && !isProjectPage) {
+      return "self-stretch flex flex-col items-start gap-[33px] sm:gap-[20px]";
+    }
+    if (currentPage === "model" && !isProjectPage) {
       return "self-stretch flex flex-col items-start gap-[33px] sm:gap-[20px]";
     }
     if (currentPage === "home") {
@@ -281,7 +323,7 @@ const PageHeader = ({
           TOM EFFERNELLI
         </b>
       </div>
-      <div className="self-stretch h-[295px] sm:h-[230px] xs:h-[210px] flex flex-col items-start gap-2.5 sm:gap-1 text-[29px]">
+      <div className="self-stretch h-[355px] sm:h-[275px] xs:h-[250px] flex flex-col items-start gap-2.5 sm:gap-1 text-[29px]">
         {pages.map((page, index) => renderNavRow(page, index))}
       </div>
     </div>
@@ -289,4 +331,3 @@ const PageHeader = ({
 };
 
 export default PageHeader;
-

@@ -162,6 +162,38 @@ const FooterHomeAboutContact = ({ className = "" }) => {
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end text-[inherit] xs:hidden sm:hidden md:hidden"
             id="sectionButton"
+            href="/model#shootings"
+          >
+            <div className="self-stretch relative leading-[121.1%] font-light lg:text-[26px] md:text-[23px]">
+              Shootings
+            </div>
+          </Link>
+          <Link
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex sm:flex-1 md:flex md:flex-1"
+            id="pageButton"
+            href="/model"
+          >
+            <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px] xs:text-[18px]">
+              MODEL
+            </b>
+          </Link>
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
+          <Link
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            id="pageButton"
+            href="/model"
+          >
+            <b className="self-stretch relative leading-[121.1%] flex items-end h-[35px] shrink-0 lg:text-[26px] md:text-[23px] sm:text-[20px]">
+              MODEL
+            </b>
+          </Link>
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
+        </div>
+        <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
+          <Link
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end text-[inherit] xs:hidden sm:hidden md:hidden"
+            id="sectionButton"
             href="/about#education"
           >
             <div className="self-stretch relative leading-[121.1%] font-light lg:text-[26px] md:text-[23px]">
