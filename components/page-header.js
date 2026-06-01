@@ -296,10 +296,10 @@ const PageHeader = ({
 
   const getHeaderContainerClasses = () => {
     if ((currentPage === "arts" || currentPage?.includes("arts")) && isProjectPage) {
-      return "self-stretch h-[442px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
+      return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
     }
     if ((currentPage === "model" || currentPage?.includes("model")) && isProjectPage) {
-      return "self-stretch h-[442px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
+      return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
     }
     if (currentPage === "arts" && !isProjectPage) {
       return "self-stretch flex flex-col items-start gap-[33px] sm:gap-[20px]";
@@ -323,7 +323,7 @@ const PageHeader = ({
           TOM EFFERNELLI
         </b>
       </div>
-      <div className="self-stretch h-[355px] sm:h-[275px] xs:h-[250px] flex flex-col items-start gap-2.5 sm:gap-1 text-[29px]">
+      <div className="self-stretch h-[295px] sm:h-[230px] xs:h-[210px] flex flex-col items-start gap-2.5 sm:gap-1 text-[29px]">
         {pages.map((page, index) => renderNavRow(page, index))}
       </div>
     </div>
