@@ -179,10 +179,10 @@ const FooterHomeAboutContact = ({ className = "" }) => {
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
-            href="/contact"
+            href="/model"
           >
             <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px] xs:text-[18px]">
-              CONTACT
+              MODEL
             </b>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
@@ -208,22 +208,15 @@ const FooterHomeAboutContact = ({ className = "" }) => {
               Resume
             </div>
           </Link>
-          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] cursor-pointer xs:flex sm:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
-            <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
-              <button
-                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
-                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
-                id="socialsButton"
-                onClick={onLinkedInLogoClick}
-              />
-              <button
-                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
-                style={{ backgroundImage: "url('/GithubLogo.png')" }}
-                id="socialsButton"
-                onClick={onGithubLogoClick}
-              />
-            </div>
-          </div>
+          <Link
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex sm:flex-1 md:flex md:flex-1"
+            id="pageButton"
+            href="/contact"
+          >
+            <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px] xs:text-[18px]">
+              CONTACT
+            </b>
+          </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end text-[inherit] xs:hidden sm:hidden md:hidden"
@@ -239,9 +232,23 @@ const FooterHomeAboutContact = ({ className = "" }) => {
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] cursor-pointer xs:flex sm:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
+          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] gap-2 xs:flex sm:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
+            <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
+              <button
+                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
+                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
+                id="socialsButton"
+                onClick={onLinkedInLogoClick}
+              />
+              <button
+                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
+                style={{ backgroundImage: "url('/GithubLogo.png')" }}
+                id="socialsButton"
+                onClick={onGithubLogoClick}
+              />
+            </div>
             <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#fff] text-left inline-block lg:text-[17px] md:text-sm sm:text-[15px] xs:text-[14px]"
+              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#fff] text-left inline-block sm:text-[15px] xs:text-[14px]"
               id="socialsButton"
               onClick={onMakeMyInboxClick}
             >
