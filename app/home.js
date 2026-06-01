@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         </div>
         <Image
-          className="lg:w-[357px] md:w-[357px] sm:w-[250px] xs:w-[300px] absolute !!m-[0 important] lg:bottom-[470px] md:bottom-[270px] sm:bottom-[165px] xs:top-[275px] left-[-50px] max-h-full object-cover z-[0]"
+          className="sm:w-[250px] xs:w-[300px] absolute !!m-[0 important] sm:bottom-[165px] xs:top-[275px] left-[-50px] max-h-full object-cover z-[0] lg:hidden md:hidden"
           width={357}
           height={680}
           sizes="100vw"
