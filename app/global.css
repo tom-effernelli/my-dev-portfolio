@@ -31,6 +31,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+ * The design was authored at ~1920px viewport width (lg nav bar = 1524px).
+ * Without an upper breakpoint, all lg: sizes apply from 1034px onward,
+ * making the layout feel ~140% zoomed on a 1366px laptop.
+ * These zoom rules compensate proportionally per screen range.
+ * Adjust the values if the result feels too small or too large.
+ */
+@media (min-width: 1034px) and (max-width: 1439px) {
+  body { zoom: 0.75; }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  body { zoom: 0.88; }
+}
+
 .font-courier {
   font-family: 'Courier New', 'Courier', monospace !important;
   letter-spacing: 0;
