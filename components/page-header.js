@@ -18,8 +18,6 @@ const PageHeader = ({
     { name: "CONTACT", href: "/contact", key: "contact" },
   ];
 
-  // Fonction pour déterminer si une page est sélectionnée
-  // Sur les pages project, aucune page n'est sélectionnée dans le header
   const isPageSelected = (pageKey) => {
     if (isProjectPage) {
       return false;
@@ -27,14 +25,13 @@ const PageHeader = ({
     return pageKey === currentPage;
   };
 
-  // Pour les pages project, la page correspondante (dev ou arts) doit avoir le symbole même si non sélectionnée
   const shouldShowSymbolOnLink = (pageKey) => {
     if (isProjectPage) {
       if (pageKey === "dev" && (currentPage === "dev" || currentPage?.includes("dev"))) {
-        return true; // Les pages project-dev gardent le symbole sur DEV
+        return true;
       }
       if (pageKey === "arts" && (currentPage === "arts" || currentPage?.includes("arts"))) {
-        return true; // Les pages project-arts gardent le symbole sur ARTS
+        return true;
       }
     }
     return false;
@@ -43,7 +40,6 @@ const PageHeader = ({
   const renderNavRow = (page, index) => {
     const isSelected = isPageSelected(page.key);
 
-    // Ligne HOME (index 0)
     if (index === 0) {
       if (currentPage === "home") {
         return (
@@ -100,7 +96,6 @@ const PageHeader = ({
       }
     }
 
-    // Ligne ABOUT (index 1)
     if (index === 1) {
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end justify-center text-xl">
@@ -144,9 +139,7 @@ const PageHeader = ({
       );
     }
 
-    // Ligne DEV (index 2)
     if (index === 2) {
-      // Cas spécial pour les pages project-dev : Link avec symbole même si non sélectionné
       const showSymbolOnLink = shouldShowSymbolOnLink(page.key);
       
       if (isProjectPage && showSymbolOnLink && !isSelected) {
@@ -171,7 +164,6 @@ const PageHeader = ({
         );
       }
       
-      // Cas normal : sélectionné ou non
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end">
           {isSelected ? (
@@ -203,7 +195,6 @@ const PageHeader = ({
       );
     }
 
-    // Ligne ARTS (index 3)
     if (index === 3) {
       const showSymbolOnLink = shouldShowSymbolOnLink(page.key);
       
@@ -236,7 +227,6 @@ const PageHeader = ({
       );
     }
 
-    // Ligne CONTACT (index 4)
     if (index === 4) {
       return (
         <div key={page.key} className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
@@ -268,7 +258,6 @@ const PageHeader = ({
     return null;
   };
 
-  // Déterminer les classes supplémentaires pour le conteneur du header
   const getHeaderContainerClasses = () => {
     if (currentPage === "arts" && isProjectPage) {
       return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";

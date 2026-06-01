@@ -1,6 +1,5 @@
 import "./global.css";
 import { Inter, Space_Grotesk } from 'next/font/google';
-import { ReactNode } from "react";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,13 +16,13 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
   title: `Tom Effernelli - Developer & Graphic Designer`,
-  description: `My personnal portfolio showcasing my developpement and graphic design work.`,
+  description: `My personal portfolio showcasing my development and graphic design work.`,
   keywords: ['Tom Effernelli', 'Developer', 'Portfolio', 'Graphic Designer', 'React', 'Next.js'],
   authors: [{ name: 'Tom Effernelli' }],
   creator: 'Tom Effernelli',
   openGraph: {
     title: 'Tom Effernelli - Developer & Graphic Designer',
-    description: 'My personnal portfolio showcasing my developpement and graphic design work.',
+    description: 'My personal portfolio showcasing my development and graphic design work.',
     url: 'https://tom-effernelli.vercel.app/',
     siteName: 'Tom Effernelli - Developer',
     images: [
@@ -40,7 +39,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Tom Effernelli - Developer & Graphic Designer',
-    description: 'My personnal portfolio showcasing my developpement and graphic design work.',
+    description: 'My personal portfolio showcasing my development and graphic design work.',
     images: ['/og-image.png'],
   },
   icons: {

@@ -5,7 +5,6 @@
 @layer theme, base, components, utilities;
 @config "../tailwind.config.js";
 
-/* Définition de la police Courier New pour l'ASCII art */
 @font-face {
   font-family: 'Courier New';
   src: local('Courier New'), local('CourierNew'), local('Courier');
@@ -32,7 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Correction spécifique pour l'ASCII art avec Courier New */
 .font-courier {
   font-family: 'Courier New', 'Courier', monospace !important;
   letter-spacing: 0;
@@ -41,7 +39,6 @@ body {
   -moz-osx-font-smoothing: auto;
 }
 
-/* Styles de sélection personnalisés - gris très foncé et blanc */
 ::selection {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -52,7 +49,6 @@ body {
   color: #ffffff;
 }
 
-/* Empêcher la sélection des images */
 img {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -65,23 +61,18 @@ img {
   user-drag: none;
 }
 
-/* Sélection inversée pour les éléments à fond sombre - sélecteurs spécifiques */
-
-/* Pages arts avec fond #090909 */
 .arts-page ::selection,
 .arts-page ::-moz-selection {
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
-/* Pages dev avec fond sombre */
 .dev-page ::selection,
 .dev-page ::-moz-selection {
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
-/* Footers sombres */
 .footer-dev-arts ::selection,
 .footer-dev-arts ::-moz-selection,
 .footer-home-about-contact ::selection,
@@ -90,7 +81,6 @@ img {
   color: #1a1a1a;
 }
 
-/* Barres de navigation sombres */
 .navigation-bar-dev ::selection,
 .navigation-bar-dev ::-moz-selection,
 .navigation-bar-arts ::selection,
@@ -99,7 +89,6 @@ img {
   color: #1a1a1a;
 }
 
-/* Dropdown menus sombres */
 .dropdown-menu-dev ::selection,
 .dropdown-menu-dev ::-moz-selection,
 .dropdown-menu-arts ::selection,
