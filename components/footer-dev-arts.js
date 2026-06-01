@@ -47,22 +47,15 @@ const FooterDevArts = ({ className = "" }) => {
             </b>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
-            <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
-              <button
-                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
-                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
-                id="socialsButton"
-                onClick={onLinkedInLogoClick}
-              />
-              <button
-                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
-                style={{ backgroundImage: "url('/GithubLogo.png')" }}
-                id="socialsButton"
-                onClick={onGithubLogoClick}
-              />
-            </div>
-          </div>
+          <Link
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            id="pageButton"
+            href="/contact"
+          >
+            <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px]">
+              CONTACT
+            </b>
+          </Link>
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <Link
@@ -125,15 +118,22 @@ const FooterDevArts = ({ className = "" }) => {
             </div>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
-            id="pageButton"
-            href="/contact"
-          >
-            <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px]">
-              CONTACT
-            </b>
-          </Link>
+          <div className="self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
+            <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
+              <button
+                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
+                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
+                id="socialsButton"
+                onClick={onLinkedInLogoClick}
+              />
+              <button
+                className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
+                style={{ backgroundImage: "url('/GithubLogo.png')" }}
+                id="socialsButton"
+                onClick={onGithubLogoClick}
+              />
+            </div>
+          </div>
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <Link
@@ -180,10 +180,10 @@ const FooterDevArts = ({ className = "" }) => {
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
-            href="/model"
+            href="/contact"
           >
             <b className="self-stretch relative leading-[121.1%] lg:text-[26px] md:text-[23px] sm:text-[20px] xs:text-[18px]">
-              MODEL
+              CONTACT
             </b>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
