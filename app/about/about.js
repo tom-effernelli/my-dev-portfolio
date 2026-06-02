@@ -56,45 +56,60 @@ const About = () => {
             <div className="self-stretch relative text-3xl lg:text-[25px] md:text-xl sm:text-[15px] xs:text-[15px]">
               <p className="m-0">
                 <span className="leading-[180%]">
-                  I’m both a computer science engineering student at Télécom Paris
-                  (Polytechnic Institute of Paris) and a B.Sc. student in
-                  mathematics at Sorbonne Université, pursuing both degrees in
-                  parallel.
+                  I study computer science engineering at Télécom Paris
+                  (Polytechnic Institute of Paris), simultaneously completing
+                  a B.Sc. in mathematics at Sorbonne Université.
                 </span>
               </p>
               <p className="m-0">
                 <span className="leading-5">&nbsp;</span>
                 <span className="leading-[180%]">
-                  I work mainly on frontend web development, with some backend and
-                  DB experience as well.
+                  Most of my work lives on the frontend — I build interfaces
+                  in React and Next.js, with Tailwind CSS for styling. I’m
+                  comfortable reaching into the backend when needed, and I’ve
+                  worked with databases across several projects.
                 </span>
               </p>
               <p className="m-0">
                 <span className="leading-5">&nbsp;</span>
                 <span className="leading-[180%]">
-                  I’m passionate about creating visuals and designs, and I believe
-                  that design and technique should always go hand in hand.
+                  Beyond web development, I’m drawn to the intersection of
+                  code and research: I’ve reimplemented a Transformer
+                  architecture from scratch, built a stochastic procedural
+                  texture synthesizer, and shipped several projects at
+                  hackathons — including two top-5 finishes.
                 </span>
               </p>
               <p className="m-0">
                 <span className="leading-5">&nbsp;</span>
                 <span className="leading-[180%]">
-                  Beyond code and design, I also model — I believe having a creative
-                  eye in multiple fields strengthens everything I do.
+                  Graphic design is the other half of how I think. I use
+                  Figma and the Adobe suite to bring ideas to life visually.
+                  I believe code and design are the same discipline approached
+                  from different angles — both are about making something work
+                  and feel inevitable.
+                </span>
+              </p>
+              <p className="m-0">
+                <span className="leading-5">&nbsp;</span>
+                <span className="leading-[180%]">
+                  I also model. I’m drawn to it for the same reasons I’m drawn
+                  to design — presence, composition, intention. You can find my
+                  shoots in the MODEL section.
                 </span>
               </p>
               <p className="m-0">
                 <span className="leading-5">&nbsp;</span>
               </p>
               <p className="m-0">
-                <span className="leading-[180%]">{`I am open to new opportunities, let's start something awesome - `}</span>
+                <span className="leading-[180%]">{`I’m open to new opportunities — `}</span>
                 <span className="leading-[180%]">
                   <button
                     className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
                     onClick={onEmailMeClick}
                   >
-                    email me
-                  </button>!
+                    let’s talk
+                  </button>.
                 </span>
               </p>
             </div>
