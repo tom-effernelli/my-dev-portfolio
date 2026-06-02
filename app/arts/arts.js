@@ -38,7 +38,7 @@ const Arts = () => {
             </div>
           </div>
           <Image
-            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover z-[0] sm:max-h-[720px] xs:max-h-[400px] sm:flex-[unset] sm:self-stretch"
+            className="self-stretch flex-1 relative max-w-full overflow-hidden lg:max-h-[650px] md:max-h-[550px] sm:max-h-[720px] xs:max-h-[400px] object-cover z-[0] sm:flex-[unset] sm:self-stretch"
             width={590}
             height={800}
             sizes="100vw"
