@@ -310,27 +310,6 @@ const About = () => {
           </div>
           <div className="w-[3px] absolute !!m-[0 important] top-[110px] md:top-[100px] sm:top-[80px] xs:top-[60px] right-[13.5px] md:right-[12.5px] sm:right-[11.5px] xs:right-[10.5px] bg-[#000] border-[#000] border-solid border-r-[3px] box-border h-[1917px] md:h-[1500px] sm:h-[1200px] xs:h-[1000px] z-[2] shrink-0" />
         </div>
-        <div className="self-stretch flex flex-col items-start p-2.5 gap-3 lg:text-[27px] md:text-[24px] sm:text-[20px] xs:text-[15px]" id="resume">
-          <div className="relative font-semibold">
-            {`You can find my complete resume (dev) `}
-            <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
-              onClick={onResumeClick}
-            >
-              here.
-            </button>
-          </div>
-          <div className="relative font-semibold">
-            {`For modeling inquiries, head to the `}
-            <a
-              className="[text-decoration:underline] text-[inherit]"
-              href="/model"
-            >
-              MODEL
-            </a>
-            {` section.`}
-          </div>
-        </div>
       </div>
       <FooterHomeAboutContact />
     </>

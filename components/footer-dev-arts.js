@@ -233,7 +233,7 @@ const FooterDevArts = ({ className = "" }) => {
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] gap-2 xs:flex sm:flex xs:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
+          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-row items-center justify-start gap-5 pt-0 px-0 pb-[5px] xs:flex sm:flex xs:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
             <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
               <button
                 className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
