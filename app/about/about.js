@@ -66,18 +66,8 @@ const About = () => {
                 <span className="leading-[180%]">
                   Most of my work lives on the frontend — I build interfaces
                   in React and Next.js, with Tailwind CSS for styling. I’m
-                  comfortable reaching into the backend when needed, and I’ve
-                  worked with databases across several projects.
-                </span>
-              </p>
-              <p className="m-0">
-                <span className="leading-5">&nbsp;</span>
-                <span className="leading-[180%]">
-                  Beyond web development, I’m drawn to the intersection of
-                  code and research: I’ve reimplemented a Transformer
-                  architecture from scratch, built a stochastic procedural
-                  texture synthesizer, and shipped several projects at
-                  hackathons — including two top-5 finishes.
+                  comfortable reaching into the backend when needed. You can
+                  find all my projects in the DEV section.
                 </span>
               </p>
               <p className="m-0">
@@ -86,8 +76,7 @@ const About = () => {
                   Graphic design is the other half of how I think. I use
                   Figma and the Adobe suite to bring ideas to life visually.
                   I believe code and design are the same discipline approached
-                  from different angles — both are about making something work
-                  and feel inevitable.
+                  from different angles — you can find my creative work in ARTS.
                 </span>
               </p>
               <p className="m-0">
