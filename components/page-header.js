@@ -318,7 +318,7 @@ const PageHeader = ({
           TOM EFFERNELLI
         </b>
       </div>
-      <div className="self-stretch h-[295px] sm:h-[230px] xs:h-[210px] flex flex-col items-start gap-2.5 sm:gap-1 text-[29px]">
+      <div className="self-stretch h-[295px] sm:h-[230px] xs:h-[230px] flex flex-col items-start gap-2.5 sm:gap-1 xs:gap-1 text-[29px]">
         {pages.map((page, index) => renderNavRow(page, index))}
       </div>
     </div>
