@@ -97,15 +97,14 @@ const About = () => {
               <div className="self-stretch flex flex-col items-start gap-[19px] z-[0]">
                 <div className="flex items-center gap-[19px]">
                   <div className="w-[27px] md:w-[22px] sm:w-[18px] xs:w-[18px] relative rounded-[50%] bg-[#000] border-[#000] border-solid border-[1px] box-border h-[27px] md:h-[22px] sm:h-[18px] xs:h-[18px] shrink-0" />
-                  <div className="relative font-semibold lg:text-3xl md:text-[25px] sm:text-xl xs:text-[20px]">{`CTO & Co-Founder of VibeMatch`}</div>
+                  <div className="relative font-semibold md:text-[25px] sm:text-xl xs:text-[20px]">Modeling</div>
                 </div>
                 <div className="self-stretch flex items-center py-0 pl-[50px] pr-0 text-[25px]">
                   <div className="flex-1 relative md:text-xl sm:text-[15px] xs:text-[15px]">
                     <p className="m-0">
-                      Developing a B2B SaaS platform to connect content creators and sponsors.
+                      Editorial and fashion photography. Paris-based.
                     </p>
-                    <p className="m-0"> - Co-Founder</p>
-                    <p className="m-0"> - Frontend development</p>
+                    <p className="m-0">Find all my shoots in the MODEL section.</p>
                   </div>
                 </div>
               </div>
@@ -311,15 +310,25 @@ const About = () => {
           </div>
           <div className="w-[3px] absolute !!m-[0 important] top-[110px] md:top-[100px] sm:top-[80px] xs:top-[60px] right-[13.5px] md:right-[12.5px] sm:right-[11.5px] xs:right-[10.5px] bg-[#000] border-[#000] border-solid border-r-[3px] box-border h-[1917px] md:h-[1500px] sm:h-[1200px] xs:h-[1000px] z-[2] shrink-0" />
         </div>
-        <div className="self-stretch flex items-center p-2.5 lg:text-[27px] md:text-[24px] sm:text-[20px] xs:text-[15px]" id="resume">
+        <div className="self-stretch flex flex-col items-start p-2.5 gap-3 lg:text-[27px] md:text-[24px] sm:text-[20px] xs:text-[15px]" id="resume">
           <div className="relative font-semibold">
-            {`You can find my complete resume `}
+            {`You can find my complete resume (dev) `}
             <button
               className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
               onClick={onResumeClick}
             >
               here.
             </button>
+          </div>
+          <div className="relative font-semibold">
+            {`For modeling inquiries, head to the `}
+            <a
+              className="[text-decoration:underline] text-[inherit]"
+              href="/model"
+            >
+              MODEL
+            </a>
+            {` section.`}
           </div>
         </div>
       </div>
