@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const DropdownMenuModelSelected = ({ className = "", onClose }) => {
   return (
     <div
-      className={`dropdown-menu-model w-full bg-[#000] border-[#fff] border-solid border-b-[2px] box-border max-w-full h-[440px] xs:h-[350px] flex flex-col items-start pt-5 xs:pt-4 pl-[45px] xs:pl-[23px] pr-[45px] xs:pr-[23px] pb-10 xs:pb-8 gap-2.5 xs:gap-2 text-left lg:text-[29px] md:text-[26px] sm:text-[22px] xs:text-[20px] text-[#fff] ${className}`}
+      className={`dropdown-menu-model w-full bg-[#b2dafa] border-[#000] border-solid border-b-[2px] box-border max-w-full h-[440px] xs:h-[350px] flex flex-col items-start pt-5 xs:pt-4 pl-[45px] xs:pl-[23px] pr-[45px] xs:pr-[23px] pb-10 xs:pb-8 gap-2.5 xs:gap-2 text-left lg:text-[29px] md:text-[26px] sm:text-[22px] xs:text-[20px] text-[#000] ${className}`}
     >
       <div className="self-stretch flex-1 overflow-hidden flex items-center justify-end pt-0 px-0 pb-0">
         <Image
@@ -14,12 +14,12 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
           height={34}
           sizes="100vw"
           alt="Close menu"
-          src="/Dropdown-menu-white.svg"
+          src="/Dropdown-menu.svg"
           onClick={onClose}
         />
       </div>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/"
       >
@@ -28,7 +28,7 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
         </b>
       </Link>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/about"
       >
@@ -37,7 +37,7 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
         </b>
       </Link>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/dev"
       >
@@ -46,7 +46,7 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
         </b>
       </Link>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/arts"
       >
@@ -55,7 +55,7 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
         </b>
       </Link>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/model"
       >
@@ -64,7 +64,7 @@ const DropdownMenuModelSelected = ({ className = "", onClose }) => {
         </b>
       </Link>
       <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
+        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#000] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
         href="/contact"
       >

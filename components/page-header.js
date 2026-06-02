@@ -7,8 +7,9 @@ const PageHeader = ({
   isProjectPage = false
 }) => {
   const isDark = borderColor === "#fff";
-  const textColorClass = isDark ? "text-[#fff]" : "text-[#000]";
-  const borderClass = isDark ? "border-[#fff]" : "border-[#000]";
+  const isYellow = borderColor === "#EB94C3";
+  const textColorClass = isDark ? "text-[#fff]" : isYellow ? "text-[#EB94C3]" : "text-[#000]";
+  const borderClass = isDark ? "border-[#fff]" : isYellow ? "border-[#EB94C3]" : "border-[#000]";
 
   const pages = [
     { name: "HOME", href: "/", key: "home" },

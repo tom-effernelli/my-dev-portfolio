@@ -3,6 +3,12 @@ import Image from "next/image";
 import { useState } from "react";
 
 const MediaCarousel = ({ mediaItems, buttonBgColor = "#090909" }) => {
+  const isLight = buttonBgColor === "#b2dafa";
+  const btnClass = isLight
+    ? `bg-[#b2dafa] border-[#000] text-[#000] hover:bg-[#000] hover:text-[#b2dafa]`
+    : buttonBgColor === "#090909"
+    ? `bg-[#090909] border-white text-white hover:bg-white hover:text-[#090909]`
+    : `bg-[#050505] border-white text-white hover:bg-white hover:text-[#050505]`;
   // État pour le carrousel
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
@@ -23,10 +29,8 @@ const MediaCarousel = ({ mediaItems, buttonBgColor = "#090909" }) => {
   return (
     <div className="self-stretch w-full relative flex items-center justify-center my-8">
       {/* Bouton flèche gauche */}
-      <button 
-        className={`absolute left-0 z-10 w-12 h-12 lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 xs:w-6 xs:h-6 border-2 border-white rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200 ${
-          buttonBgColor === "#090909" ? "bg-[#090909] hover:text-[#090909]" : "bg-[#050505] hover:text-[#050505]"
-        }`}
+      <button
+        className={`absolute left-0 z-10 w-12 h-12 lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 xs:w-6 xs:h-6 border-2 rounded-full flex items-center justify-center transition-colors duration-200 ${btnClass}`}
         onClick={goToPrevious}
         aria-label="Média précédent"
       >
@@ -63,10 +67,8 @@ const MediaCarousel = ({ mediaItems, buttonBgColor = "#090909" }) => {
       </div>
       
       {/* Bouton flèche droite */}
-      <button 
-        className={`absolute right-0 z-10 w-12 h-12 lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 xs:w-6 xs:h-6 border-2 border-white rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200 ${
-          buttonBgColor === "#090909" ? "bg-[#090909] hover:text-[#090909]" : "bg-[#050505] hover:text-[#050505]"
-        }`}
+      <button
+        className={`absolute right-0 z-10 w-12 h-12 lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 xs:w-6 xs:h-6 border-2 rounded-full flex items-center justify-center transition-colors duration-200 ${btnClass}`}
         onClick={goToNext}
         aria-label="Média suivant"
       >

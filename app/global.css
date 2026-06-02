@@ -89,8 +89,14 @@ img {
 
 .model-page ::selection,
 .model-page ::-moz-selection {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #000000;
+  color: #b2dafa;
+}
+
+.footer-model ::selection,
+.footer-model ::-moz-selection {
+  background-color: #b2dafa;
+  color: #000000;
 }
 
 .footer-dev-arts ::selection,
@@ -107,6 +113,14 @@ img {
 .navigation-bar-arts ::-moz-selection {
   background-color: #ffffff;
   color: #1a1a1a;
+}
+
+.navigation-bar-model ::selection,
+.navigation-bar-model ::-moz-selection,
+.dropdown-menu-model ::selection,
+.dropdown-menu-model ::-moz-selection {
+  background-color: #000000;
+  color: #b2dafa;
 }
 
 .dropdown-menu-dev ::selection,
