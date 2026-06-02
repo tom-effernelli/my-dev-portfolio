@@ -62,7 +62,7 @@ const About = () => {
                 </span>
               </p>
               <p className="m-0">
-                <span className="leading-5">&nbsp;</span>
+                <span className="leading-10">&nbsp;</span>
                 <span className="leading-[180%]">
                   Most of my work lives on the frontend — I build interfaces
                   in React and Next.js, with Tailwind CSS for styling. I’m
@@ -71,7 +71,7 @@ const About = () => {
                 </span>
               </p>
               <p className="m-0">
-                <span className="leading-5">&nbsp;</span>
+                <span className="leading-10">&nbsp;</span>
                 <span className="leading-[180%]">
                   Graphic design is the other half of how I think. I use
                   Figma and the Adobe suite to bring ideas to life visually.
@@ -80,7 +80,7 @@ const About = () => {
                 </span>
               </p>
               <p className="m-0">
-                <span className="leading-5">&nbsp;</span>
+                <span className="leading-10">&nbsp;</span>
                 <span className="leading-[180%]">
                   I also model. I’m drawn to it for the same reasons I’m drawn
                   to design — presence, composition, intention. You can find my
@@ -88,7 +88,7 @@ const About = () => {
                 </span>
               </p>
               <p className="m-0">
-                <span className="leading-5">&nbsp;</span>
+                <span className="leading-10">&nbsp;</span>
               </p>
               <p className="m-0">
                 <span className="leading-[180%]">{`I’m open to new opportunities — `}</span>
