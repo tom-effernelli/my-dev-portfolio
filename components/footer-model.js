@@ -19,7 +19,7 @@ const FooterModel = ({ className = "" }) => {
 
   return (
     <div
-      className={`footer-model w-full bg-[#000] border-[#b2dafa] border-solid border-t-[1px] h-[693px] sm:h-[600px] xs:h-[475px] overflow-hidden flex flex-col items-start pt-14 xs:pt-8 pb-20 xs:pb-10 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[54px] sm:gap-[40px] xs:gap-[30px] text-left text-[35px] xs:text-[30px] text-[#b2dafa] md:box-border ${className}`}
+      className={`footer-model w-full bg-[#000] border-[#fff] border-solid border-t-[1px] h-[693px] sm:h-[600px] xs:h-[475px] overflow-hidden flex flex-col items-start pt-14 xs:pt-8 pb-20 xs:pb-10 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[54px] sm:gap-[40px] xs:gap-[30px] text-left text-[35px] xs:text-[30px] text-[#fff] md:box-border ${className}`}
     >
       <div className="relative leading-[121.1%] font-extrabold lg:text-3xl md:text-[30px] sm:text-[28px] xs:text-[25px]">
         <p className="m-0">TOM</p>
@@ -28,7 +28,7 @@ const FooterModel = ({ className = "" }) => {
       <div className="self-stretch flex-1 flex flex-col items-start gap-2.5 sm:gap-1 xs:gap-0.5 text-[29px] xs:text-[25px] md:gap-2.5">
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] md:items-start md:justify-end"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] md:items-start md:justify-end"
             id="pageButton"
             href="/"
           >
@@ -38,7 +38,7 @@ const FooterModel = ({ className = "" }) => {
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
             id="pageButton"
             href="/dev"
           >
@@ -48,7 +48,7 @@ const FooterModel = ({ className = "" }) => {
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
             id="pageButton"
             href="/contact"
           >
@@ -59,7 +59,7 @@ const FooterModel = ({ className = "" }) => {
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit]"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit]"
             id="pageButton"
             href="/about"
           >
@@ -78,9 +78,9 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
+          <div className="self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
             <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#b2dafa] text-left inline-block lg:text-[17px] md:text-sm"
+              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#fff] text-left inline-block lg:text-[17px] md:text-sm"
               id="socialsButton"
               onClick={onMakeMyInboxClick}
             >
@@ -99,7 +99,7 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#b2dafa] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
             href="/dev"
           >
@@ -118,17 +118,17 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
+          <div className="self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden">
             <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
               <button
                 className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
-                style={{ backgroundImage: "url('/LinkedInLogo.png')", filter: "brightness(0) saturate(100%) invert(82%) sepia(20%) saturate(700%) hue-rotate(180deg) brightness(105%)" }}
+                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
                 id="socialsButton"
                 onClick={onLinkedInLogoClick}
               />
               <button
                 className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] lg:w-7 lg:h-[27px] md:w-[23px] md:h-[22px]"
-                style={{ backgroundImage: "url('/GithubLogo.png')", filter: "brightness(0) saturate(100%) invert(82%) sepia(20%) saturate(700%) hue-rotate(180deg) brightness(105%)" }}
+                style={{ backgroundImage: "url('/GithubLogo.png')" }}
                 id="socialsButton"
                 onClick={onGithubLogoClick}
               />
@@ -146,7 +146,7 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#b2dafa] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
             href="/arts"
           >
@@ -156,7 +156,7 @@ const FooterModel = ({ className = "" }) => {
           </Link>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
             id="pageButton"
             href="/arts"
           >
@@ -178,7 +178,7 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#b2dafa] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
             href="/model"
           >
@@ -210,7 +210,7 @@ const FooterModel = ({ className = "" }) => {
             </div>
           </Link>
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#b2dafa] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
+            className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
             href="/contact"
           >
@@ -233,23 +233,23 @@ const FooterModel = ({ className = "" }) => {
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
-          <div className="self-stretch w-[284px] xs:w-full border-[#b2dafa] border-solid border-b-[2px] box-border overflow-hidden hidden flex-row items-center justify-start gap-5 pt-0 px-0 pb-[5px] xs:flex sm:flex xs:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
+          <div className="self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-row items-center justify-start gap-5 pt-0 px-0 pb-[5px] xs:flex sm:flex xs:flex sm:flex-1 sm:cursor-auto md:flex md:flex-1 md:cursor-auto">
             <div className="flex items-center py-0 pl-[7px] pr-0 gap-5">
               <button
                 className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
-                style={{ backgroundImage: "url('/LinkedInLogo.png')", filter: "brightness(0) saturate(100%) invert(82%) sepia(20%) saturate(700%) hue-rotate(180deg) brightness(105%)" }}
+                style={{ backgroundImage: "url('/LinkedInLogo.png')" }}
                 id="socialsButton"
                 onClick={onLinkedInLogoClick}
               />
               <button
                 className="cursor-pointer [border:none] p-0 w-[34px] relative h-[33px] bg-cover bg-no-repeat bg-[top] sm:w-[20px] sm:h-[19px] xs:w-[18px] xs:h-[17px]"
-                style={{ backgroundImage: "url('/GithubLogo.png')", filter: "brightness(0) saturate(100%) invert(82%) sepia(20%) saturate(700%) hue-rotate(180deg) brightness(105%)" }}
+                style={{ backgroundImage: "url('/GithubLogo.png')" }}
                 id="socialsButton"
                 onClick={onGithubLogoClick}
               />
             </div>
             <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#b2dafa] text-left inline-block sm:text-[15px] xs:text-[14px]"
+              className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch relative text-xl [text-decoration:underline] leading-[121.1%] font-light text-[#fff] text-left inline-block sm:text-[15px] xs:text-[14px]"
               id="socialsButton"
               onClick={onMakeMyInboxClick}
             >
@@ -258,7 +258,7 @@ const FooterModel = ({ className = "" }) => {
           </div>
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <Link
-            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#b2dafa] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
+            className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:hidden sm:hidden md:hidden"
             id="pageButton"
             href="/model"
           >

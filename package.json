@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jszip": "^3.10.1",
     "next": "^15.3.8",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",

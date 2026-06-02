@@ -95,8 +95,8 @@ img {
 
 .footer-model ::selection,
 .footer-model ::-moz-selection {
-  background-color: #b2dafa;
-  color: #000000;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
 .footer-dev-arts ::selection,
