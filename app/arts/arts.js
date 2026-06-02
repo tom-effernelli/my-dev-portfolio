@@ -25,8 +25,8 @@ const Arts = () => {
             <span className="font-space-grotesk font-medium">.</span>
           </div>
         </div>
-        <div className="self-stretch flex items-end justify-center text-right text-3xl lg:min-h-[500px] sm:flex-col xs:flex-col">
-          <div className="flex flex-col items-end justify-end py-0 pl-0 pr-[30px] box-border gap-5 max-w-[730px] z-[1] lg:max-w-[500px] md:w-[400px] md:max-w-[400px] sm:w-[300px] sm:max-w-[300px]">
+        <div className="self-stretch flex items-end justify-end text-right text-3xl lg:min-h-[500px] sm:flex-col xs:flex-col">
+          <div className="flex flex-col items-end justify-end py-0 pl-0 pr-0 box-border gap-5 max-w-[730px] z-[1] lg:max-w-[500px] md:w-[400px] md:max-w-[400px] sm:w-[300px] sm:max-w-[300px]">
             <div className="self-stretch relative leading-[121.1%] lg:text-[25px] md:text-xl sm:text-[15px] xs:text-[15px]">
               IN HERE YOU WILL FIND MY
             </div>
@@ -38,7 +38,7 @@ const Arts = () => {
             </div>
           </div>
           <Image
-            className="self-stretch flex-1 relative max-w-full overflow-hidden lg:max-h-[650px] md:max-h-[550px] sm:max-h-[720px] xs:max-h-[400px] object-contain z-[0] sm:flex-[unset] sm:self-stretch"
+            className="self-stretch relative max-w-full overflow-hidden lg:max-h-[650px] md:max-h-[550px] sm:max-h-[720px] xs:max-h-[400px] object-contain object-right z-[0] sm:self-stretch"
             width={590}
             height={800}
             sizes="100vw"
