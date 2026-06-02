@@ -53,53 +53,37 @@ const About = () => {
               </div>
               <div className="self-stretch relative border-[#000] border-dashed border-t-[2px] box-border h-[11px] overflow-hidden shrink-0" />
             </div>
-            <div className="self-stretch relative text-3xl lg:text-[25px] md:text-xl sm:text-[15px] xs:text-[15px]">
-              <p className="m-0">
-                <span className="leading-[180%]">
-                  I study computer science engineering at Télécom Paris
-                  (Polytechnic Institute of Paris), simultaneously completing
-                  a B.Sc. in mathematics at Sorbonne Université.
-                </span>
+            <div className="self-stretch relative text-3xl lg:text-[25px] md:text-xl sm:text-[15px] xs:text-[15px] flex flex-col gap-[1.8em]">
+              <p className="m-0 leading-[180%]">
+                I study computer science engineering at Télécom Paris
+                (Polytechnic Institute of Paris), simultaneously completing
+                a B.Sc. in mathematics at Sorbonne Université.
               </p>
-              <p className="m-0">
-                <span className="leading-10">&nbsp;</span>
-                <span className="leading-[180%]">
-                  Most of my work lives on the frontend — I build interfaces
-                  in React and Next.js, with Tailwind CSS for styling. I’m
-                  comfortable reaching into the backend when needed. You can
-                  find all my projects in the DEV section.
-                </span>
+              <p className="m-0 leading-[180%]">
+                Most of my work lives on the frontend -I build interfaces
+                in React and Next.js, with Tailwind CSS for styling. I’m
+                comfortable reaching into the backend when needed. You can
+                find all my projects in the DEV section.
               </p>
-              <p className="m-0">
-                <span className="leading-10">&nbsp;</span>
-                <span className="leading-[180%]">
-                  Graphic design is the other half of how I think. I use
-                  Figma and the Adobe suite to bring ideas to life visually.
-                  I believe code and design are the same discipline approached
-                  from different angles — you can find my creative work in ARTS.
-                </span>
+              <p className="m-0 leading-[180%]">
+                Graphic design is the other half of how I think. I use
+                Figma and the Adobe suite to bring ideas to life visually.
+                I believe code and design are the same discipline approached
+                from different angles -you can find my creative work in ARTS.
               </p>
-              <p className="m-0">
-                <span className="leading-10">&nbsp;</span>
-                <span className="leading-[180%]">
-                  I also model. I’m drawn to it for the same reasons I’m drawn
-                  to design — presence, composition, intention. You can find my
-                  shoots in the MODEL section.
-                </span>
+              <p className="m-0 leading-[180%]">
+                I also model. I’m drawn to it for the same reasons I’m drawn
+                to design -presence, composition, intention. You can find my
+                shoots in the MODEL section.
               </p>
-              <p className="m-0">
-                <span className="leading-10">&nbsp;</span>
-              </p>
-              <p className="m-0">
-                <span className="leading-[180%]">{`I’m open to new opportunities — `}</span>
-                <span className="leading-[180%]">
-                  <button
-                    className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
-                    onClick={onEmailMeClick}
-                  >
-                    let’s talk
-                  </button>.
-                </span>
+              <p className="m-0 leading-[180%]">
+                {`I’m open to new opportunities -`}
+                <button
+                  className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
+                  onClick={onEmailMeClick}
+                >
+                  let’s talk
+                </button>.
               </p>
             </div>
           </div>
