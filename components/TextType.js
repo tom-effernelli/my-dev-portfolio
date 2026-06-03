@@ -17,7 +17,7 @@ const TextType = ({
   hideCursorWhileTyping = false,
   cursorCharacter = '_',
   cursorClassName = '',
-  cursorBlinkDuration = 0.7,
+  cursorBlinkDuration = 0.5,
   textColors = [],
   variableSpeed,
   onSentenceComplete,
@@ -72,7 +72,7 @@ const TextType = ({
         duration: cursorBlinkDuration,
         repeat: -1,
         yoyo: true,
-        ease: 'power2.inOut'
+        ease: 'steps(1)'
       });
     }
   }, [showCursor, cursorBlinkDuration]);
