@@ -63,6 +63,12 @@ body {
   color: #ffffff;
 }
 
+.contact-page ::selection,
+.contact-page ::-moz-selection {
+  background-color: #1a1a1a;
+  color: #fff3d9;
+}
+
 img {
   -webkit-user-select: none;
   -moz-user-select: none;

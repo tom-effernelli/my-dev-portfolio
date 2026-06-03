@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <>
       <StickyNavigation currentPage="contact" />
-      <div className="w-full relative bg-[#fff3d9] overflow-hidden flex flex-col items-start pt-8 pb-[85px] pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[140px] text-left text-[45px] text-[#000] md:gap-[100px] md:box-border">
+      <div className="contact-page w-full relative bg-[#fff3d9] overflow-hidden flex flex-col items-start pt-8 pb-[85px] pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[140px] text-left text-[45px] text-[#000] md:gap-[100px] md:box-border">
         <div className="self-stretch z-[1]">
           <PageHeader currentPage="contact" borderColor="#000" />
         </div>
