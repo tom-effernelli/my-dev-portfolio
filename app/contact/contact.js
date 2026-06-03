@@ -4,6 +4,7 @@ import Image from "next/image";
 import FooterHomeAboutContact from "../../components/footer-home-about-contact";
 import StickyNavigation from "../../components/sticky-navigation";
 import PageHeader from "../../components/page-header";
+import TextType from "../../components/TextType"; // Note the uppercase 'T'
 
 const Contact = () => {
   const onMakeMyInboxClick = useCallback(() => {
@@ -36,9 +37,18 @@ const Contact = () => {
             src="/writing-machine@2x.png"
           />
           <div className="self-stretch flex-1 flex flex-col items-start justify-between gap-0 lg:self-stretch lg:h-auto sm:flex-[unset] sm:self-stretch">
-            <div className="self-stretch relative leading-[130px] lg:text-[100px] lg:leading-[90px] md:text-[75px] md:leading-[75px] sm:text-[100px] sm:leading-[100px] xs:text-[80px] xs:leading-[80px] sm:text-left font-dm-serif-text font-bold">
-              DROP ME A LINE.
-            </div>
+            <TextType
+              as="div"
+              text="Drop me a line."
+              className="self-stretch relative leading-[130px] lg:text-[100px] lg:leading-[90px] md:text-[75px] md:leading-[75px] sm:text-[100px] sm:leading-[100px] xs:text-[80px] xs:leading-[80px] sm:text-left font-dm-serif-text font-bold uppercase"
+              typingSpeed={100}
+              pauseDuration={1600}
+              showCursor={true}
+              cursorCharacter="_"
+              deletingSpeed={10}
+              loop={false}
+              startOnVisible={true}
+            />
             <div className="self-stretch flex flex-col items-start pt-[50px] px-0 pb-0 gap-[9px] text-[28px] sm:pt-[50px] sm:box-border">
               <div className="self-stretch border-[#000] border-solid border-b-[1px] flex flex-col items-start pt-0 px-0 pb-2.5">
                 <button
