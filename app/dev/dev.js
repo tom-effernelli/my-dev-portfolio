@@ -1,15 +1,33 @@
+'use client';
+import dynamic from "next/dynamic";
 import FooterDevArts from "../../components/footer-dev-arts";
 import StickyNavigation from "../../components/sticky-navigation";
 import ProjectDevLink from "../../components/project-dev-link";
 import PageHeader from "../../components/page-header";
 
+const Dither = dynamic(() => import("../../components/Dither"), { ssr: false });
+
 const Dev = () => {
   return (
     <>
       <StickyNavigation currentPage="dev" />
-      <div className="dev-page w-full relative overflow-hidden flex flex-col items-start pt-8 pb-[85px] xs:pb-[37px] pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[183px] xs:gap-[100px] bg-[url('/Dev@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-[45px] text-[#fff] lg:gap-[140px] md:gap-[100px] sm:gap-[70px] md:box-border">
-        <PageHeader currentPage="dev" borderColor="#fff" />
-        <div className="self-stretch flex flex-col items-start gap-[88px] xs:gap-[30px] text-xl font-courier" id="tech-stack">
+      <div className="dev-page w-full relative overflow-hidden flex flex-col items-start pt-8 pb-[85px] xs:pb-[37px] pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[183px] xs:gap-[100px] bg-black text-left text-[45px] text-[#fff] lg:gap-[140px] md:gap-[100px] sm:gap-[70px] md:box-border">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Dither
+            waveColor={[0.5, 0.5, 0.5]}
+            disableAnimation={false}
+            enableMouseInteraction={true}
+            mouseRadius={0.3}
+            colorNum={4}
+            waveAmplitude={0.3}
+            waveFrequency={3}
+            waveSpeed={0.05}
+          />
+        </div>
+        <div className="relative z-10 self-stretch">
+          <PageHeader currentPage="dev" borderColor="#fff" />
+        </div>
+        <div className="relative z-10 self-stretch flex flex-col items-start gap-[88px] xs:gap-[30px] text-xl font-courier" id="tech-stack">
           <div className="self-stretch relative leading-[121.1%] lg:text-[15px] md:text-[10px] sm:text-[9px] xs:text-[6px]">
             <p className="m-0 whitespace-pre-wrap">{`████████ ███████  ██████ ██   ██     ███████ ████████  █████   ██████ ██   ██ `}</p>
             <p className="m-0 whitespace-pre-wrap">{`   ██    ██      ██      ██   ██     ██         ██    ██   ██ ██      ██  ██  `}</p>
@@ -19,7 +37,7 @@ const Dev = () => {
           </div>
           <div className="self-stretch relative text-3xl leading-[121.1%] lg:text-[25px] md:text-xl sm:text-[15px] xs:text-[15px] font-bold">
             <p className="m-0">
-              I’m mainly a frontend web developer, although I also work on
+              I'm mainly a frontend web developer, although I also work on
               projects outside web development (such as video game development).
               My focus is on building modern, responsive web applications, while
               keeping an eye on performance and clean design.
@@ -38,7 +56,7 @@ const Dev = () => {
             <p className="m-0">- Methods and Tools: Git, Responsive Design</p>
           </div>
         </div>
-        <div className="self-stretch flex flex-col items-center py-0 pl-[170px] xs:pl-[0px] pr-0 gap-[63px] xs:gap-[30px] text-right text-[32px] md:pl-[130px] md:box-border sm:pl-[66px] sm:box-border font-courier" id="projects">
+        <div className="relative z-10 self-stretch flex flex-col items-center py-0 pl-[170px] xs:pl-[0px] pr-0 gap-[63px] xs:gap-[30px] text-right text-[32px] md:pl-[130px] md:box-border sm:pl-[66px] sm:box-border font-courier" id="projects">
           <div className="self-stretch relative text-xl leading-[121.1%] lg:text-[15px] md:text-[10px] sm:text-[9px] xs:text-[6px]">
             <p className="m-0 whitespace-pre-wrap">{`██████  ██████   ██████       ██ ███████  ██████ ████████ ███████ `}</p>
             <p className="m-0 whitespace-pre-wrap">{`██   ██ ██   ██ ██    ██      ██ ██      ██         ██    ██      `}</p>
