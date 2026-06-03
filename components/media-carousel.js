@@ -194,7 +194,7 @@ const MediaCarousel = ({ mediaItems, buttonBgColor = "#090909", zipName = "shoot
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 8v2h14v-2H5z"/>
             </svg>
-            {zipping ? "Compression..." : "Télécharger tout"}
+            {zipping ? "Compression..." : "Download all"}
           </button>
         </div>
       )}

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 'use client';
-import { useRef, useEffect, forwardRef } from 'react';
+import { useRef, useEffect, useState, forwardRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { EffectComposer, wrapEffect } from '@react-three/postprocessing';
 import { Effect } from 'postprocessing';
@@ -182,6 +182,21 @@ function DitheredWaves({
   const mouseRef = useRef(new THREE.Vector2());
   const { viewport, size, gl } = useThree();
 
+  // Disable the mouse/pointer wave distortion on touch devices: dragging a
+  // finger across the background to deform it feels unpleasant, so we only
+  // keep the interaction on devices that have a real hovering pointer.
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+    const mql = window.matchMedia('(hover: none) and (pointer: coarse)');
+    const update = () => setIsTouchDevice(mql.matches);
+    update();
+    mql.addEventListener('change', update);
+    return () => mql.removeEventListener('change', update);
+  }, []);
+
+  const mouseInteractionActive = enableMouseInteraction && !isTouchDevice;
+
   const waveUniformsRef = useRef({
     time: new THREE.Uniform(0),
     resolution: new THREE.Uniform(new THREE.Vector2(0, 0)),
@@ -206,7 +221,7 @@ function DitheredWaves({
 
   useEffect(() => {
     const handlePointerMove = e => {
-      if (!enableMouseInteraction) return;
+      if (!mouseInteractionActive) return;
       const el = gl.domElement;
       const rect = el.getBoundingClientRect();
       // Map the pointer to the canvas drawing-buffer space via a 0..1 fraction.
@@ -218,7 +233,7 @@ function DitheredWaves({
     };
     window.addEventListener('pointermove', handlePointerMove);
     return () => window.removeEventListener('pointermove', handlePointerMove);
-  }, [enableMouseInteraction, gl]);
+  }, [mouseInteractionActive, gl]);
 
   const prevColor = useRef([...waveColor]);
   useFrame(({ clock }) => {
@@ -237,10 +252,10 @@ function DitheredWaves({
       prevColor.current = [...waveColor];
     }
 
-    u.enableMouseInteraction.value = enableMouseInteraction ? 1 : 0;
+    u.enableMouseInteraction.value = mouseInteractionActive ? 1 : 0;
     u.mouseRadius.value = mouseRadius;
 
-    if (enableMouseInteraction) {
+    if (mouseInteractionActive) {
       u.mousePos.value.copy(mouseRef.current);
     }
   });
