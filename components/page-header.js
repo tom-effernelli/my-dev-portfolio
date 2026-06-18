@@ -16,7 +16,6 @@ const PageHeader = ({
     { name: "ABOUT", href: "/about", key: "about" },
     { name: "DEV", href: "/dev", key: "dev" },
     { name: "ARTS", href: "/arts", key: "arts" },
-    { name: "MODEL", href: "/model", key: "model" },
     { name: "CONTACT", href: "/contact", key: "contact" },
   ];
 
@@ -33,9 +32,6 @@ const PageHeader = ({
         return true;
       }
       if (pageKey === "arts" && (currentPage === "arts" || currentPage?.includes("arts"))) {
-        return true;
-      }
-      if (pageKey === "model" && (currentPage === "model" || currentPage?.includes("model"))) {
         return true;
       }
     }
@@ -186,7 +182,7 @@ const PageHeader = ({
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start max-w-[70px] xs:hidden sm:hidden md:hidden" />
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-between max-w-[70px] xs:hidden sm:hidden md:hidden" />
-          {(currentPage === "home" || currentPage === "about" || currentPage === "contact" || currentPage === "dev" || currentPage === "arts" || currentPage === "model") && (
+          {(currentPage === "home" || currentPage === "about" || currentPage === "contact" || currentPage === "dev" || currentPage === "arts") && (
             <div className={`self-stretch flex-1 ${borderClass} border-solid border-b-[2px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[5px] xs:hidden sm:hidden md:hidden`}>
               <Timestamp className={`relative leading-[121.1%] font-light lg:text-[22px] ${textColorClass}`} />
             </div>
@@ -294,13 +290,7 @@ const PageHeader = ({
     if ((currentPage === "arts" || currentPage?.includes("arts")) && isProjectPage) {
       return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
     }
-    if ((currentPage === "model" || currentPage?.includes("model")) && isProjectPage) {
-      return "self-stretch h-[382px] flex flex-col items-start py-0 pl-[74px] xs:pl-[37px] pr-[74px] xs:pr-[37px] box-border gap-[33px] sm:gap-[20px] z-[0] md:box-border";
-    }
     if (currentPage === "arts" && !isProjectPage) {
-      return "self-stretch flex flex-col items-start gap-[33px] sm:gap-[20px]";
-    }
-    if (currentPage === "model" && !isProjectPage) {
       return "self-stretch flex flex-col items-start gap-[33px] sm:gap-[20px]";
     }
     if (currentPage === "home") {

@@ -61,15 +61,6 @@ const NavigationBarHomeSelected = ({ className = "" }) => {
             </div>
             <div className="flex items-center justify-center xs:hidden sm:hidden md:hidden">
               <Link
-                className="cursor-pointer [text-decoration:none] relative leading-[121.1%] font-medium text-[inherit]"
-                id="pageButton"
-                href="/model"
-              >
-                MODEL
-              </Link>
-            </div>
-            <div className="flex items-center justify-center xs:hidden sm:hidden md:hidden">
-              <Link
                 className="cursor-pointer [text-decoration:none] relative leading-[121.1%] font-medium text-[inherit] md:block"
                 id="pageButton"
                 href="/contact"

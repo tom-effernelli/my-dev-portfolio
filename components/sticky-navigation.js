@@ -5,8 +5,6 @@ import NavigationBarAboutSelected from "./navigation-bar-about-selected";
 import NavigationBarContactSelected from "./navigation-bar-contact-selected";
 import NavigationBarDevSelected from "./navigation-bar-dev-selected";
 import NavigationBarArtsSelected from "./navigation-bar-arts-selected";
-import NavigationBarModelSelected from "./navigation-bar-model-selected";
-
 const StickyNavigation = ({ currentPage = "home" }) => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
@@ -67,8 +65,6 @@ const StickyNavigation = ({ currentPage = "home" }) => {
       return <NavigationBarDevSelected className="fixed top-0 left-0 w-full z-50" />;
     case "arts":
       return <NavigationBarArtsSelected className="fixed top-0 left-0 w-full z-50" />;
-    case "model":
-      return <NavigationBarModelSelected className="fixed top-0 left-0 w-full z-50" />;
     default:
       return <NavigationBarHomeSelected className="fixed top-0 left-0 w-full z-50" />;
   }

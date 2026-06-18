@@ -35,8 +35,7 @@ const Home = () => {
           <div className="flex flex-col items-start sm:gap-[145px] xs:gap-[70px] md:gap-[210px] lg:gap-[190px] shrink-0 lg:w-auto lg:[align-self:unset] md:pt-[40px] lg:pt-[50px] sm:pt-[60px] lg:box-border">
             <div className="relative tracking-[-0.01em] leading-[103%] font-space-grotesk font-medium lg:text-[140px] lg:w-auto lg:[align-self:unset] md:text-[110px] sm:text-[75px] xs:text-[52px]">
               <p className="m-0">DEVELOPER,</p>
-              <p className="m-0">DESIGNER,</p>
-              <p className="m-0">MODEL.</p>
+              <p className="m-0">DESIGNER.</p>
             </div>
             <div className="self-stretch flex items-center justify-center text-5xl lg:pt-5 lg:box-border">
               <div className="flex-1 relative font-light md:text-[30px] lg:text-3xl lg:leading-[45px] lg:self-stretch lg:h-auto md:leading-[48px] sm:leading-[30px] sm:text-[25px] xs:text-[16px]">
@@ -60,8 +59,8 @@ const Home = () => {
         </div>
         <div className="self-stretch flex flex-col items-start py-0 pl-0 pr-[74px] xs:pr-[37px] z-[1] text-[#000] md:box-border">
           <div className="self-stretch relative text-[35px] leading-[160%] font-light lg:text-[30px] md:text-[25px] sm:text-[20px] xs:text-[16px]">
-            <p className="m-0">This is a single space for three different worlds.</p>
-            <p className="m-0">Code, design, and modeling — each with its own section,</p>
+            <p className="m-0">This is a single space for two different worlds.</p>
+            <p className="m-0">Code and design — each with its own section,</p>
             <p className="m-0">each part of the same story.</p>
           </div>
         </div>

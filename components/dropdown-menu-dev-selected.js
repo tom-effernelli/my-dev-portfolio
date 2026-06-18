@@ -58,15 +58,6 @@ const DropdownMenuDevSelected = ({ className = "", onClose }) => {
       <Link
         className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
         id="pageButton"
-        href="/model"
-      >
-        <b className="self-stretch flex-1 relative leading-[121.1%] flex items-end cursor-pointer">
-          MODEL
-        </b>
-      </Link>
-      <Link
-        className="cursor-pointer [text-decoration:none] self-stretch flex-1 border-[#fff] border-solid border-b-[2px] overflow-hidden flex items-end pt-0 px-0 pb-[5px] text-[inherit]"
-        id="pageButton"
         href="/contact"
       >
         <b className="self-stretch flex-1 relative leading-[121.1%] flex items-end cursor-pointer">

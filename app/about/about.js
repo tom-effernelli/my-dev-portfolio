@@ -72,11 +72,6 @@ const About = () => {
                 from different angles -you can find my creative work in ARTS.
               </p>
               <p className="m-0 leading-[180%]">
-                I also model. I’m drawn to it for the same reasons I’m drawn
-                to design -presence, composition, intention. You can find my
-                shoots in the MODEL section.
-              </p>
-              <p className="m-0 leading-[180%]">
                 {`I’m open to new opportunities -`}
                 <button
                   className="cursor-pointer [border:none] p-0 bg-[transparent] [text-decoration:underline] text-[inherit] text-left inline-block"
@@ -94,20 +89,6 @@ const About = () => {
               EXPERIENCE
             </div>
             <div className="self-stretch flex flex-col items-start relative gap-14 text-3xl">
-              <div className="self-stretch flex flex-col items-start gap-[19px] z-[0]">
-                <div className="flex items-center gap-[19px]">
-                  <div className="w-[27px] md:w-[22px] sm:w-[18px] xs:w-[18px] relative rounded-[50%] bg-[#000] border-[#000] border-solid border-[1px] box-border h-[27px] md:h-[22px] sm:h-[18px] xs:h-[18px] shrink-0" />
-                  <div className="relative font-semibold md:text-[25px] sm:text-xl xs:text-[20px]">Modeling</div>
-                </div>
-                <div className="self-stretch flex items-center py-0 pl-[50px] pr-0 text-[25px]">
-                  <div className="flex-1 relative md:text-xl sm:text-[15px] xs:text-[15px]">
-                    <p className="m-0">
-                      Editorial and fashion photography. Paris-based.
-                    </p>
-                    <p className="m-0">Find all my shoots in the MODEL section.</p>
-                  </div>
-                </div>
-              </div>
               <div className="self-stretch flex flex-col items-start gap-2 z-[1]">
                 <div className="self-stretch flex items-center gap-[19px]">
                   <div className="w-[27px] md:w-[22px] sm:w-[18px] xs:w-[18px] relative rounded-[50%] bg-[#000] border-[#000] border-solid border-[1px] box-border h-[27px] md:h-[22px] sm:h-[18px] xs:h-[18px] shrink-0" />
