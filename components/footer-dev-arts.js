@@ -191,6 +191,7 @@ const FooterDevArts = ({ className = "" }) => {
           <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
         </div>
         <div className="self-stretch flex-1 overflow-hidden flex items-end justify-center">
+          <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end xs:hidden sm:hidden md:hidden" />
           <Link
             className="cursor-pointer [text-decoration:none] self-stretch w-[284px] xs:w-full border-[#fff] border-solid border-b-[2px] box-border overflow-hidden hidden flex-col items-start justify-end pt-0 px-0 pb-[5px] text-[inherit] xs:flex sm:flex xs:flex sm:flex-1 md:flex md:flex-1"
             id="pageButton"
